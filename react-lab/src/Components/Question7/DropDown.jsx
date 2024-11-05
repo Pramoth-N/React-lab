@@ -13,7 +13,7 @@ const dropDown = () => {
     "yz",
   ]);
 
-  const [selectedItem, setSelectedItem] = useState("Not Selected");
+  const [selectedItem, setSelectedItem] = useState("Select an option");
 
   return (
     <div>
