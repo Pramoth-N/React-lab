@@ -36,7 +36,7 @@ export default class LikeButton extends Component {
             backgroundColor: "#f0f8ff",
           }}
         >
-          <h3>Lable : {this.state.likes}</h3>
+          <h3>Count : {this.state.likes}</h3>
           <button
             onClick={this.toggleLike}
             style={{
