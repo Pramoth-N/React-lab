@@ -3,10 +3,12 @@ import React, { Component } from "react";
 export default class LikeButton extends Component {
   state = {
     likes: 0,
+    isLiked: false,
   };
   toggleLike = () => {
     this.setState({
-      likes: this.state.likes + 1,
+      likes: this.state.isLiked ? this.state.likes - 1 : this.state.likes + 1,
+      isLiked: !this.state.isLiked,
     });
   };
   render() {
@@ -38,14 +40,14 @@ export default class LikeButton extends Component {
           <button
             onClick={this.toggleLike}
             style={{
-              backgroundColor: this.state.likes % 2 === 0 ? "blue" : "red",
+              backgroundColor: this.state.isLiked ? "red" : "blue",
               color: "#fff",
               height: "40px",
               width: "100px",
               borderRadius: "10px",
             }}
           >
-            {this.state.likes % 2 == 0 ? "Like" : "Unlike"}
+            {this.state.isLiked ? "Unlike" : "Like"}
           </button>
         </div>
       </div>
