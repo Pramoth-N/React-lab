@@ -1,3 +1,5 @@
+// Same ans for first 3 questions
+
 const WelcomeCard = () => {
   return (
     <div
