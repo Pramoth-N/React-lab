@@ -7,12 +7,13 @@ import ProductList from './Components/Question5/ProductList';
 import EventRegistrationForm from './Components/Question6/Q1/EventRegistrationForm';
 import UserRegistrationForm from './Components/Question6/Q3/UserRegistrationForm';
 import DropDown from './Components/Question7/DropDown';
+import UserData from './Components/Question8/Q1/UserData';
 function App() {
 
   return (
     <>
       <div>
-        <DropDown/>
+        <UserData/>
       </div>
     </>
   )
