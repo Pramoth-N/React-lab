@@ -70,7 +70,7 @@ const UserData = () => {
     axios
       .post("https://jsonplaceholder.typicode.com/users", usertoAdd)
       .then((res) => {
-        console.log(res);
+        console.log("User added successfully!");
       })
       .catch((err) => {
         console.log(err);
